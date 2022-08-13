@@ -10,7 +10,7 @@
 <body>
 <script type="text/javascript">
 webOS.service.request("luna://org.webosbrew.piccap.service", {
-  method: "isRunning",
+  method: "status",
   parameters: {},
   onSuccess: function (res) {
 	console.log(JSON.stringify(res));
@@ -22,7 +22,7 @@ webOS.service.request("luna://org.webosbrew.piccap.service", {
 			console.log(JSON.stringify(res));
 		  },
 		  onFailure: function (res) {
-			console.log(JSON.stringify(res)); 
+			console.log(JSON.stringify(res));
 		  }
 		});
 	} else {
@@ -33,13 +33,13 @@ webOS.service.request("luna://org.webosbrew.piccap.service", {
 			console.log(JSON.stringify(res));
 		  },
 		  onFailure: function (res) {
-			console.log(JSON.stringify(res)); 
+			console.log(JSON.stringify(res));
 		  }
 		});
 		}
   },
   onFailure: function (res) {
-      console.log(JSON.stringify(res)); 
+      console.log(JSON.stringify(res));
   }
 });
 window.close();

@@ -2,7 +2,7 @@
   "id": "ui30",
   "title": "PicCap OnOff",
   "appDescription": "Movies - RakutenTV button",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "vendor": "open source",
   "type": "web",
   "main": "index.html",

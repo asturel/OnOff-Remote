@@ -29,8 +29,8 @@ jobs:
         env:
           appinfo_path: ./app/appinfo.json
           ipk_filename: ./ui30_${{ env.IPK_VERSION }}_all.ipk
-          icon_url: https://github.com/Bahoue/OnOff-Remote/raw/main/app/largeIcon.png
-          repo_url: https://github.com/Bahoue/OnOff-Remote
+          icon_url: https://github.com/asturel/OnOff-Remote/raw/main/app/largeIcon.png
+          repo_url: https://github.com/asturel/OnOff-Remote
 
         run: webosbrew-gen-manifest -a ${{ env.appinfo_path }} -p ${{ env.ipk_filename }} -i ${{ env.icon_url }} -l ${{ env.repo_url }} -o ui30.manifest.json
 
